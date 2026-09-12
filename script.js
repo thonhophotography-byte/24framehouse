@@ -1,16 +1,14 @@
 // ---- Gallery data ----
-// Replace these URLs with your real work — put files in an /images folder
-// and change src to e.g. "images/photo1.jpg".
 const photos = [
-  { src: "https://picsum.photos/seed/24fh-portrait1/800/1050", category: "portrait", caption: "Portrait — Studio" },
-  { src: "https://picsum.photos/seed/24fh-event1/800/560", category: "event", caption: "Event — Downtown Launch" },
-  { src: "https://picsum.photos/seed/24fh-film1/800/1000", category: "film", caption: "Short Film — Still" },
-  { src: "https://picsum.photos/seed/24fh-portrait2/800/1200", category: "portrait", caption: "Portrait — Natural Light" },
-  { src: "https://picsum.photos/seed/24fh-commercial1/800/650", category: "commercial", caption: "Commercial — Product" },
-  { src: "https://picsum.photos/seed/24fh-music1/800/1100", category: "music", caption: "Music Video — On Set" },
-  { src: "https://picsum.photos/seed/24fh-event2/800/950", category: "event", caption: "Event — Wedding" },
-  { src: "https://picsum.photos/seed/24fh-film2/800/540", category: "film", caption: "Short Film — BTS" },
-  { src: "https://picsum.photos/seed/24fh-commercial2/800/1000", category: "commercial", caption: "Commercial — Brand Spot" },
+  { src: "images/portfolio-01.jpg", category: "sled", caption: "Sled Push — Peak Effort" },
+  { src: "images/portfolio-02.jpg", category: "sled", caption: "Sled Push — All In" },
+  { src: "images/portfolio-03.jpg", category: "sled", caption: "Sled Push — Pure Joy" },
+  { src: "images/portfolio-04.jpg", category: "rope", caption: "Rope Pull — Determination" },
+  { src: "images/portfolio-05.jpg", category: "rope", caption: "Rope Pull — Team Spirit" },
+  { src: "images/portfolio-06.jpg", category: "rope", caption: "Rope Pull — Focus" },
+  { src: "images/portfolio-07.jpg", category: "rope", caption: "Rope Pull — Side by Side" },
+  { src: "images/portfolio-08.jpg", category: "sandbag", caption: "Sandbag Lunge — Teamwork" },
+  { src: "images/portfolio-09.jpg", category: "sled", caption: "Sled Push — Locked In" },
 ];
 
 const gallery = document.getElementById("gallery");
