@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24FrameHouse — Photography &amp; Videography Studio</title>
+<meta name="description" content="24FrameHouse is a photography and videography studio offering portrait photography, event coverage, and video production for film, commercials, and music videos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <a class="logo" href="#top">24<span>FRAME</span>HOUSE</a>
+  <nav class="nav">
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="btn btn-small nav-cta">Book Now</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+</header>
+
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('https://picsum.photos/seed/24fh-hero/1800/1200')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Photography &amp; Videography Studio</p>
+    <h1>We Frame<br>Your <em>Story</em></h1>
+    <div class="hero-actions">
+      <a href="#work" class="btn">View Our Work</a>
+      <a href="#contact" class="btn btn-outline">Book a Session</a>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll ↓</div>
+</section>
+
+<section class="section" id="services">
+  <p class="eyebrow center">What We Do</p>
+  <h2 class="center">Crafted With Intention</h2>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-num">01</span>
+      <h3>Portrait Photography</h3>
+      <p>Every face has a story worth telling. Studio or on-location sessions for individuals, actors, and executives.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">02</span>
+      <h3>Event Photography</h3>
+      <p>Weddings, launches, and gatherings — documented candidly, with an eye for the moments that matter.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">03</span>
+      <h3>Film &amp; Commercial Video</h3>
+      <p>Short films, brand commercials, and promotional video — from concept and shoot through to final edit.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">04</span>
+      <h3>Music Videos</h3>
+      <p>Visual direction for artists — concept development, cinematography, and post-production.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Our Work</p>
+      <h2>The Work Speaks</h2>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="portrait">Portrait</button>
+      <button class="filter-btn" data-filter="event">Event</button>
+      <button class="filter-btn" data-filter="film">Film</button>
+      <button class="filter-btn" data-filter="commercial">Commercial</button>
+      <button class="filter-btn" data-filter="music">Music Video</button>
+    </div>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+</section>
+
+<section class="section about" id="about">
+  <div class="about-grid">
+    <div class="about-photo">
+      <img src="https://picsum.photos/seed/24fh-team/800/1000" alt="24FrameHouse studio team">
+    </div>
+    <div class="about-text">
+      <p class="eyebrow">About Us</p>
+      <h2>24 Frames a Second, One Story at a Time</h2>
+      <p>24FrameHouse is a photography and videography studio built around a simple idea: every frame should earn its place. The name is a nod to cinema — 24 frames per second — and to the craft of making each one count.</p>
+      <p>We work across portraits, events, commercials, and music videos, bringing the same attention to light, composition, and story to every project — big or small.</p>
+      <a href="#contact" class="btn btn-outline">Start a Project</a>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <p class="eyebrow center">Contact</p>
+  <h2 class="center">Let's Create Something</h2>
+  <p class="contact-sub">Tell us about your project. We'll get back to you within 24 hours.</p>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item">
+        <span class="contact-label">Email</span>
+        <a href="mailto:24framehouse@gmail.com">24framehouse@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Phone</span>
+        <a href="tel:+18327630634">+1 (832) 763-0634</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Hours</span>
+        <span>Mon – Fri, 9am – 6pm<br>Studio sessions by appointment</span>
+      </div>
+      <div class="socials">
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+      </div>
+      <select name="projectType" required>
+        <option value="" disabled selected>Project type</option>
+        <option>Portrait Photography</option>
+        <option>Event Photography</option>
+        <option>Film / Commercial</option>
+        <option>Music Video</option>
+        <option>Other</option>
+      </select>
+      <textarea name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> 24FrameHouse. All rights reserved.</p>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
