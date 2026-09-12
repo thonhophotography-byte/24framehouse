@@ -2,22 +2,22 @@
 // Replace these URLs with your real work — put files in an /images folder
 // and change src to e.g. "images/photo1.jpg".
 const photos = [
-  { src: "https://picsum.photos/seed/24fh-portrait1/900/1100", category: "portrait", caption: "Portrait — Studio", tall: true },
-  { src: "https://picsum.photos/seed/24fh-event1/900/900", category: "event", caption: "Event — Downtown Launch" },
-  { src: "https://picsum.photos/seed/24fh-film1/900/900", category: "film", caption: "Short Film — Still" },
-  { src: "https://picsum.photos/seed/24fh-portrait2/900/1100", category: "portrait", caption: "Portrait — Natural Light", tall: true },
-  { src: "https://picsum.photos/seed/24fh-commercial1/900/900", category: "commercial", caption: "Commercial — Product" },
-  { src: "https://picsum.photos/seed/24fh-music1/900/1100", category: "music", caption: "Music Video — On Set", tall: true },
-  { src: "https://picsum.photos/seed/24fh-event2/900/900", category: "event", caption: "Event — Wedding" },
-  { src: "https://picsum.photos/seed/24fh-film2/900/1100", category: "film", caption: "Short Film — BTS", tall: true },
-  { src: "https://picsum.photos/seed/24fh-commercial2/900/900", category: "commercial", caption: "Commercial — Brand Spot" },
+  { src: "https://picsum.photos/seed/24fh-portrait1/800/1050", category: "portrait", caption: "Portrait — Studio" },
+  { src: "https://picsum.photos/seed/24fh-event1/800/560", category: "event", caption: "Event — Downtown Launch" },
+  { src: "https://picsum.photos/seed/24fh-film1/800/1000", category: "film", caption: "Short Film — Still" },
+  { src: "https://picsum.photos/seed/24fh-portrait2/800/1200", category: "portrait", caption: "Portrait — Natural Light" },
+  { src: "https://picsum.photos/seed/24fh-commercial1/800/650", category: "commercial", caption: "Commercial — Product" },
+  { src: "https://picsum.photos/seed/24fh-music1/800/1100", category: "music", caption: "Music Video — On Set" },
+  { src: "https://picsum.photos/seed/24fh-event2/800/950", category: "event", caption: "Event — Wedding" },
+  { src: "https://picsum.photos/seed/24fh-film2/800/540", category: "film", caption: "Short Film — BTS" },
+  { src: "https://picsum.photos/seed/24fh-commercial2/800/1000", category: "commercial", caption: "Commercial — Brand Spot" },
 ];
 
 const gallery = document.getElementById("gallery");
 
 function renderGallery() {
   gallery.innerHTML = photos.map((p, i) => `
-    <div class="gallery-item${p.tall ? " tall" : ""}" data-category="${p.category}" data-index="${i}">
+    <div class="gallery-item" data-category="${p.category}" data-index="${i}">
       <img src="${p.src}" alt="${p.caption}" loading="lazy">
       <div class="caption">${p.caption}</div>
     </div>
