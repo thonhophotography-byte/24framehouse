@@ -118,8 +118,17 @@ h2.center { text-align: center; margin-bottom: 56px; }
   cursor: pointer;
 }
 
+/* Room accents */
+body[data-room="fashion"] { --accent: #b5758a; }
+body[data-room="film"] { --accent: #c9932e; }
+body[data-room="podcast"] { --accent: #3f7d7a; }
+body[data-room="rental"] { --accent: #c1622b; }
+
+.nav a.active { color: var(--text); border-bottom: 1px solid var(--accent); padding-bottom: 4px; }
+
 /* Hero */
 .hero {
+  position: relative;
   width: 100%;
   max-height: 88vh;
   overflow: hidden;
@@ -130,6 +139,99 @@ h2.center { text-align: center; margin-bottom: 56px; }
   height: 100%;
   max-height: 88vh;
   object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,9,7,0.65) 0%, rgba(10,9,7,0.1) 55%, rgba(10,9,7,0) 75%);
+}
+
+.hero-content {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 44px;
+  z-index: 2;
+  max-width: 640px;
+  color: #fff;
+}
+
+.hero-content .eyebrow { color: rgba(255,255,255,0.85); }
+
+.hero-content h1 {
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  color: #fff;
+  line-height: 1.1;
+}
+
+.hero-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.9);
+  margin-top: 14px;
+  max-width: 520px;
+}
+
+/* Rooms grid (home) */
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  background: var(--border);
+}
+
+.room-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.room-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.room-card:hover img { transform: scale(1.06); }
+
+.room-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,9,7,0.8) 0%, rgba(10,9,7,0.15) 55%, rgba(10,9,7,0) 75%);
+}
+
+.room-info {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  color: #fff;
+}
+
+.room-num {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.room-info h3 { font-size: 1.6rem; color: #fff; margin-bottom: 6px; }
+.room-info p { font-size: 0.86rem; color: rgba(255,255,255,0.85); max-width: 320px; }
+
+.room-enter {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+  padding-bottom: 2px;
 }
 
 /* Intro */
@@ -202,7 +304,7 @@ h2.center { text-align: center; margin-bottom: 56px; }
 
 .filter-btn.active {
   color: var(--text);
-  border-color: var(--text);
+  border-color: var(--accent);
 }
 
 /* Gallery — masonry */
@@ -263,7 +365,7 @@ h2.center { text-align: center; margin-bottom: 56px; }
 .service-num {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.3rem;
-  color: var(--text-dim);
+  color: var(--accent);
 }
 
 .service-row h3 { font-size: 1.5rem; }
@@ -412,6 +514,8 @@ h2.center { text-align: center; margin-bottom: 56px; }
 
 /* Responsive */
 @media (max-width: 1000px) {
+  .rooms-grid { grid-template-columns: 1fr; }
+  .room-card { aspect-ratio: 4 / 3; }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .about-photo { max-width: 320px; margin: 0 auto; }
   .contact-grid { grid-template-columns: 1fr; }

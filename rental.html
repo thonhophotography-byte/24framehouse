@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Gear Room — 24FrameHouse</title>
+<meta name="description" content="Film equipment rental at 24FrameHouse — cameras, lighting, grip, and audio gear for your next shoot.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body data-room="rental">
+
+<header class="site-header" id="top">
+  <a class="logo" href="index.html"><span class="logo-num">24</span> Frame <span class="logo-small">House</span></a>
+  <nav class="nav">
+    <a href="fashion.html">Fashion</a>
+    <a href="film.html">Film</a>
+    <a href="podcast.html">Podcast</a>
+    <a href="rental.html" class="active">Rental</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+</header>
+
+<section class="hero">
+  <img class="hero-img" src="https://picsum.photos/seed/24fh-rental-hero/1800/1400" alt="Film equipment rental gear wall">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Room 04 — The Gear Room</p>
+    <h1>Film Equipment Rental</h1>
+    <p class="hero-sub">Cameras, lighting, and grip gear — professional equipment for your next shoot, ready when you are.</p>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <p class="eyebrow center">What's Available</p>
+  <h2 class="center">Crafted With Intention</h2>
+
+  <div class="services-list">
+    <div class="service-row">
+      <span class="service-num">01</span>
+      <h3>Cameras</h3>
+      <p>Cinema and mirrorless bodies, lenses, and support.</p>
+    </div>
+    <div class="service-row">
+      <span class="service-num">02</span>
+      <h3>Lighting</h3>
+      <p>LED panels, fresnels, and modifiers for any setup.</p>
+    </div>
+    <div class="service-row">
+      <span class="service-num">03</span>
+      <h3>Grip &amp; Support</h3>
+      <p>Tripods, sliders, gimbals, and rigging.</p>
+    </div>
+    <div class="service-row">
+      <span class="service-num">04</span>
+      <h3>Audio</h3>
+      <p>Shotgun mics, wireless lavs, and field recorders.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">The Gear</p>
+      <h2>The Gear Room</h2>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="camera">Cameras</button>
+      <button class="filter-btn" data-filter="lighting">Lighting</button>
+      <button class="filter-btn" data-filter="grip">Grip</button>
+      <button class="filter-btn" data-filter="audio">Audio</button>
+    </div>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+</section>
+
+<section class="section contact" id="book">
+  <p class="eyebrow center">Book This Room</p>
+  <h2 class="center">Gear Up</h2>
+  <p class="contact-sub">Tell us what you need and when, and we'll get back to you within 24 hours.</p>
+  <a href="contact.html?room=rental" class="btn">Reserve Gear</a>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> 24FrameHouse. All rights reserved.</p>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+</div>
+
+<script>
+window.ROOM_PHOTOS = [
+  { src: "https://picsum.photos/seed/24fh-rental-1/800/1050", category: "camera", caption: "Cinema Camera Kit" },
+  { src: "https://picsum.photos/seed/24fh-rental-2/800/560", category: "lighting", caption: "LED Panel Setup" },
+  { src: "https://picsum.photos/seed/24fh-rental-3/800/1000", category: "grip", caption: "Gimbal &amp; Slider" },
+  { src: "https://picsum.photos/seed/24fh-rental-4/800/1200", category: "camera", caption: "Lens Case" },
+  { src: "https://picsum.photos/seed/24fh-rental-5/800/650", category: "audio", caption: "Wireless Lav Kit" },
+  { src: "https://picsum.photos/seed/24fh-rental-6/800/1100", category: "lighting", caption: "Fresnel Light" },
+];
+</script>
+<script src="script.js"></script>
+</body>
+</html>

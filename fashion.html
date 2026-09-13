@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fashion Room — 24FrameHouse</title>
+<meta name="description" content="Fashion and editorial photography at 24FrameHouse — lookbooks, campaigns, and e-commerce imagery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body data-room="fashion">
+
+<header class="site-header" id="top">
+  <a class="logo" href="index.html"><span class="logo-num">24</span> Frame <span class="logo-small">House</span></a>
+  <nav class="nav">
+    <a href="fashion.html" class="active">Fashion</a>
+    <a href="film.html">Film</a>
+    <a href="podcast.html">Podcast</a>
+    <a href="rental.html">Rental</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+</header>
+
+<section class="hero">
+  <img class="hero-img" src="https://picsum.photos/seed/24fh-fashion-hero/1800/1400" alt="Fashion editorial photography">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Room 01 — The Fashion Room</p>
+    <h1>Fashion &amp; Editorial Photography</h1>
+    <p class="hero-sub">From lookbooks to full campaigns — a stylist's eye and a studio's precision for every fashion story.</p>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <p class="eyebrow center">What We Do</p>
+  <h2 class="center">Crafted With Intention</h2>
+
+  <div class="services-list">
+    <div class="service-row">
+      <span class="service-num">01</span>
+      <h3>Editorial Shoots</h3>
+      <p>Concept-driven stories for magazines, zines, and portfolios.</p>
+    </div>
+    <div class="service-row">
+      <span class="service-num">02</span>
+      <h3>Lookbooks</h3>
+      <p>Clean, consistent product-on-model imagery for a full collection.</p>
+    </div>
+    <div class="service-row">
+      <span class="service-num">03</span>
+      <h3>Campaign Photography</h3>
+      <p>Full creative direction and production for brand campaigns.</p>
+    </div>
+    <div class="service-row">
+      <span class="service-num">04</span>
+      <h3>E-Commerce &amp; Product</h3>
+      <p>High-volume, consistent shots ready for your online store.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Our Work</p>
+      <h2>The Fashion Room</h2>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="editorial">Editorial</button>
+      <button class="filter-btn" data-filter="lookbook">Lookbook</button>
+      <button class="filter-btn" data-filter="campaign">Campaign</button>
+    </div>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+</section>
+
+<section class="section contact" id="book">
+  <p class="eyebrow center">Book This Room</p>
+  <h2 class="center">Let's Shoot Your Story</h2>
+  <p class="contact-sub">Tell us about your fashion project and we'll get back to you within 24 hours.</p>
+  <a href="contact.html?room=fashion" class="btn">Book the Fashion Room</a>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> 24FrameHouse. All rights reserved.</p>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+</div>
+
+<script>
+window.ROOM_PHOTOS = [
+  { src: "https://picsum.photos/seed/24fh-fashion-1/800/1050", category: "editorial", caption: "Editorial — Studio Light" },
+  { src: "https://picsum.photos/seed/24fh-fashion-2/800/560", category: "campaign", caption: "Campaign — Spring Collection" },
+  { src: "https://picsum.photos/seed/24fh-fashion-3/800/1000", category: "lookbook", caption: "Lookbook — Full Look 01" },
+  { src: "https://picsum.photos/seed/24fh-fashion-4/800/1200", category: "editorial", caption: "Editorial — Portrait" },
+  { src: "https://picsum.photos/seed/24fh-fashion-5/800/650", category: "campaign", caption: "Campaign — Brand Story" },
+  { src: "https://picsum.photos/seed/24fh-fashion-6/800/1100", category: "lookbook", caption: "Lookbook — Full Look 02" },
+];
+</script>
+<script src="script.js"></script>
+</body>
+</html>

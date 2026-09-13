@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — 24FrameHouse</title>
+<meta name="description" content="Get in touch with 24FrameHouse — fashion photography, film, podcast &amp; livestream, and equipment rental.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <a class="logo" href="index.html"><span class="logo-num">24</span> Frame <span class="logo-small">House</span></a>
+  <nav class="nav">
+    <a href="fashion.html">Fashion</a>
+    <a href="film.html">Film</a>
+    <a href="podcast.html">Podcast</a>
+    <a href="rental.html">Rental</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+</header>
+
+<section class="section contact" style="padding-top: 100px;">
+  <p class="eyebrow center">Contact</p>
+  <h2 class="center">Let's Create Something</h2>
+  <p class="contact-sub">Tell us which room fits your project. We'll get back to you within 24 hours.</p>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item">
+        <span class="contact-label">Email</span>
+        <a href="mailto:24framehouse@gmail.com">24framehouse@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Phone</span>
+        <a href="tel:+18327630634">+1 (832) 763-0634</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">Hours</span>
+        <span>Mon – Fri, 9am – 6pm<br>Studio sessions by appointment</span>
+      </div>
+      <div class="socials">
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+      </div>
+      <select name="room" id="roomSelect" required>
+        <option value="" disabled>Which room?</option>
+        <option value="The Fashion Room">The Fashion Room — Fashion Photography</option>
+        <option value="The Film Room">The Film Room — Video &amp; Filmmaking</option>
+        <option value="The Broadcast Room">The Broadcast Room — Podcast &amp; Livestream</option>
+        <option value="The Gear Room">The Gear Room — Equipment Rental</option>
+        <option value="Not sure yet">Not sure yet</option>
+      </select>
+      <textarea name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> 24FrameHouse. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

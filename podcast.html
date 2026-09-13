@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Broadcast Room — 24FrameHouse</title>
+<meta name="description" content="Podcast and livestream production at 24FrameHouse — multi-cam recording and live event streaming.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body data-room="podcast">
+
+<header class="site-header" id="top">
+  <a class="logo" href="index.html"><span class="logo-num">24</span> Frame <span class="logo-small">House</span></a>
+  <nav class="nav">
+    <a href="fashion.html">Fashion</a>
+    <a href="film.html">Film</a>
+    <a href="podcast.html" class="active">Podcast</a>
+    <a href="rental.html">Rental</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+</header>
+
+<section class="hero">
+  <img class="hero-img" src="https://picsum.photos/seed/24fh-podcast-hero/1800/1400" alt="Podcast recording studio">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Room 03 — The Broadcast Room</p>
+    <h1>Podcast &amp; Livestream</h1>
+    <p class="hero-sub">A fully equipped studio for podcast recording and live event streaming — multi-cam, clean audio, zero stress.</p>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <p class="eyebrow center">What We Do</p>
+  <h2 class="center">Crafted With Intention</h2>
+
+  <div class="services-list">
+    <div class="service-row">
+      <span class="service-num">01</span>
+      <h3>Podcast Recording</h3>
+      <p>Multi-cam, broadcast-quality audio, on-site producer.</p>
+    </div>
+    <div class="service-row">
+      <span class="service-num">02</span>
+      <h3>Livestream Production</h3>
+      <p>Multi-platform live streaming for events and shows.</p>
+    </div>
+    <div class="service-row">
+      <span class="service-num">03</span>
+      <h3>Studio Rental</h3>
+      <p>Book the Broadcast Room by the hour or the day.</p>
+    </div>
+    <div class="service-row">
+      <span class="service-num">04</span>
+      <h3>Post &amp; Distribution</h3>
+      <p>Editing, clipping, and publishing across platforms.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Our Work</p>
+      <h2>The Broadcast Room</h2>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="podcast">Podcast</button>
+      <button class="filter-btn" data-filter="livestream">Livestream</button>
+      <button class="filter-btn" data-filter="studio">Studio</button>
+    </div>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+</section>
+
+<section class="section contact" id="book">
+  <p class="eyebrow center">Book This Room</p>
+  <h2 class="center">Let's Go Live</h2>
+  <p class="contact-sub">Tell us about your show or event and we'll get back to you within 24 hours.</p>
+  <a href="contact.html?room=podcast" class="btn">Book the Broadcast Room</a>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> 24FrameHouse. All rights reserved.</p>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+</div>
+
+<script>
+window.ROOM_PHOTOS = [
+  { src: "https://picsum.photos/seed/24fh-podcast-1/800/1050", category: "podcast", caption: "Podcast — Multi-Cam Setup" },
+  { src: "https://picsum.photos/seed/24fh-podcast-2/800/560", category: "livestream", caption: "Livestream — Event Coverage" },
+  { src: "https://picsum.photos/seed/24fh-podcast-3/800/1000", category: "studio", caption: "The Broadcast Room" },
+  { src: "https://picsum.photos/seed/24fh-podcast-4/800/1200", category: "podcast", caption: "Podcast — Guest Session" },
+  { src: "https://picsum.photos/seed/24fh-podcast-5/800/650", category: "livestream", caption: "Livestream — Control Desk" },
+  { src: "https://picsum.photos/seed/24fh-podcast-6/800/1100", category: "studio", caption: "Studio — Recording Booth" },
+];
+</script>
+<script src="script.js"></script>
+</body>
+</html>
